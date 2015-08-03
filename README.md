@@ -20,7 +20,7 @@ Usage of hookserver:
   -secret="":      secret of webhook Signature
 ```
 
-### 1. create script
+### Quick start
 
 ```bash
 mkdir -p /your/home/hookserver/your-username/your-reponame/
@@ -46,7 +46,7 @@ You can customize script path by parser json. it schema is below.
 ```json
 {
   "Event Name( X-Github-Event )" : {
-    "Path": "template string it direct to script path"
+    "Path": "template string it direct to script path",
     "Values": {
       "Value name": "value path of webhook json payload"
     }
